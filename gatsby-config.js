@@ -4,6 +4,18 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.yourdomain.tld`,
+    title: "Raynauld's place",
   },
-  plugins: [],
-}
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `ongoing-projects`,
+        path: `${__dirname}/ongoing-projects`,
+      },
+    },
+    "gatsby-plugin-mdx",
+  ],
+};

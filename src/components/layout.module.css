@@ -1,0 +1,62 @@
+.container {
+  margin: auto;
+  max-width: 500px;
+  font-family: sans-serif;
+}
+
+.heading {
+  text-align: center;
+  color: rebeccapurple;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.nav-link-item {
+  padding-right: 2rem;
+}
+.nav-link-text {
+  color: black;
+}
+
+.frontFoto {
+  border: green 5px solid;
+}
+
+.aboutFoto {
+  border: grey dotted 8px;
+  width: 45vw;
+  height: 40vh;
+}
+
+.aboutFoto:hover {
+  animation: changeAbout 2s;
+  animation-fill-mode: forwards;
+}
+
+.spotFrame {
+  position: fixed;
+  left: 70vw;
+  width: 30vw;
+  height: 15vh;
+  border: none;
+  opacity: 0;
+}
+
+.spotFrame:hover {
+  animation: changeOpac 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes changeOpac {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes changeAbout {
+  100% {
+    content: url("../images/aboutFoto.png");
+  }
+}
