@@ -5,7 +5,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import { aboutFoto, spotFrame } from "../components/layout.module.css";
 
 function AboutPage() {
-  const pageId = "about";
   return (
     <>
       <iframe
@@ -15,9 +14,9 @@ function AboutPage() {
         loading="lazy"
         className={spotFrame}
       ></iframe>
-      <Layout pageTitle="Over mij">
+      <Layout pageTitle="About Me">
         <StaticImage
-          alt="Weer een Raynauld, maar dan ietwat verdacht."
+          alt="Yours truly again, this time a bit more sus."
           src="../images/aboutFoto1.png"
           className={aboutFoto}
         />
@@ -26,6 +25,6 @@ function AboutPage() {
   );
 }
 
-export const Head = () => <Seo title="about pagina" />;
+export const Head = () => <Seo title="about page" />;
 
 export default AboutPage;

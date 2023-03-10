@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import Layout from "../components/layout.js";
 import { StaticImage } from "gatsby-plugin-image";
 import { frontFoto } from "../components/layout.module.css";
@@ -8,23 +7,23 @@ import Seo from "../components/seo.js";
 function IndexPage() {
   return (
     <>
-      <Layout pageTitle="Thuis" altText="Een foto van mij">
+      <Layout pageTitle="Home">
         <StaticImage
-          alt="Een foto van ondergetekende"
+          alt="A photo of yours truly"
           src="../images/indexFoto.png"
           className={frontFoto}
         />
-        <h2>Even kort, hoor</h2>
+        <h2>I'll be brief</h2>
         <p>
-          Dit is de website van Raynauld Minkema. Een plek om dingen die ik aan
-          mensen wil tonen kan plaatsen, maar ook een plek om mijn voortgang in
-          projecten bij te houden.
+          This is the webspace of Raynauld Minkema. A place for me to store
+          stuff I would like to show to other people, but also for me to keep
+          track of my projects.
         </p>
       </Layout>
     </>
   );
 }
 
-export const Head = () => <Seo title="Raynauld's thuispagina" />;
+export const Head = () => <Seo title="Raynauld's homespace" />;
 
 export default IndexPage;
